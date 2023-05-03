@@ -10,13 +10,15 @@
 // 1
 // 12
 // 123
-function printPiramid(high) {
-    if (high <= 0) {
+function printPiramid(height) {
+    if (height <= 0) {
         return "Altura no válida";
     }
 
     let data = "";
-    for (let i = 1; i <= high; i++) {
+    // iterar desde 1 hasta la altura, armar una fila concatenando el nùmero correspondiente,
+    // de manera de generar una pirámide 
+    for (let i = 1; i <= height; i++) {
         data += i;
         console.log(data);
     }
